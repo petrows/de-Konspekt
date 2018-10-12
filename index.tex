@@ -1,0 +1,31 @@
+\documentclass[a4paper,10pt]{book}
+
+\usepackage[utf8]{inputenc} % Включаем поддержку UTF8
+\usepackage[russian]{babel}  % Включаем пакет для поддержки русского языка
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float,fontenc}
+\usepackage{graphicx,xcolor}
+
+\usepackage{geometry} % Меняем поля страницы
+% \geometry{left=2cm}% левое поле
+% \geometry{right=1cm}% правое поле
+% \geometry{top=1cm}% верхнее поле
+% \geometry{bottom=1cm}% нижнее поле
+
+\graphicspath{ {./img/} }
+
+\title{Немецкий язык: конспект}
+\date{2018}
+\author{Головачев П.П.}
+
+\newcommand{\term}[1]{\texttt{\textbf{#1}}}
+\newcommand{\satzew}[1]{\underline{#1}}
+\newcommand{\ubersatze}[1]{\textit{#1}}
+ 
+\begin{document}
+
+\tableofcontents
+
+\input{parts/wenn-weil-als.tex}
+
+\end{document} 
+
