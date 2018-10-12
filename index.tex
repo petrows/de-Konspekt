@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{book}
+\documentclass[a4paper,10pt]{report}
 
 \usepackage[utf8]{inputenc} % Включаем поддержку UTF8
 \usepackage[russian]{babel}  % Включаем пакет для поддержки русского языка
@@ -6,10 +6,10 @@
 \usepackage{graphicx,xcolor}
 
 \usepackage{geometry} % Меняем поля страницы
-% \geometry{left=2cm}% левое поле
-% \geometry{right=1cm}% правое поле
-% \geometry{top=1cm}% верхнее поле
-% \geometry{bottom=1cm}% нижнее поле
+\geometry{left=2cm}% левое поле
+\geometry{right=1cm}% правое поле
+\geometry{top=1cm}% верхнее поле
+\geometry{bottom=1cm}% нижнее поле
 
 \graphicspath{ {./img/} }
 
@@ -25,7 +25,10 @@
 
 \tableofcontents
 
+\input{parts/falle.tex}
+\newpage
 \input{parts/wenn-weil-als.tex}
+\newpage
 
 \end{document} 
 
