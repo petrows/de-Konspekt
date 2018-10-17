@@ -1,9 +1,10 @@
 \documentclass[a4paper,10pt]{report}
 
-\usepackage[utf8]{inputenc} % Включаем поддержку UTF8
-\usepackage[russian]{babel}  % Включаем пакет для поддержки русского языка
-\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float,fontenc}
-\usepackage{graphicx,xcolor}
+%\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+\newfontfamily\cyrillicfonttt{Times New Roman}
 
 \usepackage{geometry} % Меняем поля страницы
 \geometry{left=2cm}% левое поле
@@ -11,6 +12,7 @@
 \geometry{top=1cm}% верхнее поле
 \geometry{bottom=1cm}% нижнее поле
 
+\usepackage{graphicx,xcolor}
 \graphicspath{ {./img/} }
 
 \title{Немецкий язык: конспект}
