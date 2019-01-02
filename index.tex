@@ -13,6 +13,7 @@
 \geometry{bottom=1cm}% нижнее поле
 
 \usepackage{graphicx,xcolor}
+\usepackage{longtable}
 \graphicspath{ {./img/} }
 
 \title{Немецкий язык: конспект}
@@ -21,8 +22,10 @@
 \newcommand{\term}[1]{\texttt{\textbf{#1}}}
 \newcommand{\satzew}[1]{\underline{#1}}
 \newcommand{\ubersatze}[1]{\textit{#1}}
-\newcommand{\akk}{ {\color{red}{\textbf{akk}}} }
-\newcommand{\dat}{ {\color{blue}{\textbf{dat}}} }
+\newcommand{\nom}{ {\color{black}{\textbf{N}}} }
+\newcommand{\akk}{ {\color{red}{\textbf{A}}} }
+\newcommand{\dat}{ {\color{blue}{\textbf{D}}} }
+\newcommand{\gen}{ {\color{darkgreen}{\textbf{G}}} }
 
  
 \begin{document}
@@ -192,38 +195,37 @@ Das Bild hängt an (где?) der Wand.
 Ich stecke einen Schlussel in (куда?) die Tur.
 Der Schlussel steckt in (где?) der Tur.
 
-Глаголы управления
+\chapter{Глаголы управления}
 
-Worüber - uber - с гласной, поэтому добавляется "r" - "о чем". Wo + r + uber - глагол с управлением
-Sprechen mit D - с кем-то
-Sprechen über A - о чем-то
+Это глагол + специальный предлог который используется с ним в паре.
 
-darüber - об этом, можно не говорить второй раз сущ, ставить это вместо. Ich spreche auch daruber.
+\paragraph{Построение фраз:}
+\begin{itemize}
+ \item \term{Wo + (r) + предлог управления} - для вопросов про неодушевленные предметы.
+ ~\\ \ubersatze{Wovon traumst du?}
+ ~\\ \ubersatze{Worüber sprechst du?}
+ \item \term{Предлог управления + Wen/Wem} - для вопросов про людей.
+ ~\\ \ubersatze{Von wem traumst du?}
+ ~\\ \ubersatze{Über wen sprechst du?}
+ \item \term{da + (r) + предлог управления} - для обозначения слова-существительного "об этом" что бы не повторять предмет второй раз.
+ ~\\ \ubersatze{Ich spreche auch daruber}
+\end{itemize}
 
-Träumen von dat - мечтать о чем-то
-
-Sein zufrieden mit dat - быть довольным чем-то
-
-sich freuen auf akk - радоваться чему-то
-denken an Akk - думать над чем-то
-sich treffen mit dat - встречаться с кем-то
-
-ärgern uber - злиться 
-
-для вопросов про одушевл. - предлог на первое место:
-
-Auf wen freust du dich?
-
-\begin{tabular}{ l l l l }
+\begin{longtable}{ l l l l }
+\caption{Список глаголов} \label{tab:long} \\
 \multicolumn{4}{l}{keine} \\ \hline
 		 & empfehlen & \dat{} \akk{} & Рекомендовать кому-то что-то \\
 		 & helfen & \dat{} bei \dat{} & Помогать кому-то, в чем-то \\
+		 & vorschlagen & \dat \akk & предлагать кому-то что-то \\
+		 & anbieten & \dat \akk & предлагать кому-то что-то \\
+		 
 \multicolumn{4}{l}{\term{an}} \\ \hline
 		 & denken & an \akk & Думать (о чём-то) \\
 	sich & erinnern & an \akk & Вспоминать о чем-то \\
 		 & teilniehmen & an \dat & Принимать участие в чем-то \\
 	sich & gewöhnen & an \dat & Привыкать (к чему-то) \\
 	sich & zweifeln & an \dat & Сомневаться в чем-то \\
+	
 \multicolumn{4}{l}{\term{auf}} \\ \hline
 		 & achten & auf \akk & Обращать внимание на что-то \\
 	sich & freuen & auf \akk & Радоваться (настоящее, будущее) \\
@@ -238,41 +240,65 @@ Auf wen freust du dich?
 \multicolumn{4}{l}{\term{aus}} \\ \hline
 		 & bestehen & aus \dat & состоять из чего-то \\
 		 & stammen & aus \dat & происходить из чего-то \\
+		 
 \multicolumn{4}{l}{\term{über}} \\ \hline
 	sich & ärgern & über \akk & Злиться на что-то \\
 	sich & beschweren & über \akk & Жаловаться на что-то \\
-		 & erzahlen & uber \akk & Рассказывать о чем-то \\
+		 & erzahlen & über \akk & Рассказывать о чем-то \\
+		 
 \multicolumn{4}{l}{\term{für}} \\ \hline
-		 & danken & \dat für \akk & благодарить кому-то за что-то \\
-	sich & entschuldigen & für \akk & извиняться за что-то \\
-	sich & entscheiden & für \akk & решиться на что-то \\
+		 & danken & \dat für \akk & Благодарить кому-то за что-то \\
+	sich & entschuldigen & für \akk & Извиняться за что-то \\
+	sich & entscheiden & für \akk & Решиться на что-то \\
 	sich & interessiert & für \akk & Интересоваться чем-то \\
-\end{tabular}
+	
+\multicolumn{4}{l}{\term{mit}} \\ \hline
+	sich & beschäftigen & mit \dat & Заниматься чем-то (деятельность) \\
+	sich & streiten & mit \dat um \akk & Ссориться с кем-то по поводу чего-то \\
+		 & sprechen & mit \dat über \akk & Говорить с кем-то о чём-то \\
+	sich & treffen & mit \dat & Встречаться с кем-то \\
+	sich & verabreden & mit \dat & Договориться с кем-то \\
+	sein & zufrieden & mit \dat & Быть довольным чем-то \\
 
-Bitten um akk - просить о чём-то
-Sich Beschäftigen mit dat - заниматься чем-то (деятельность)
-Angst haben vor dat - иметь страх на что-то
-Sich kümmern um akk - заботиться о ком-то (чем-то)
-Sich Streiten mit dat um akk - ссориться с кем-то по поводу чего-то
-Sich verlieben in akk - влюбиться в кого-то
-Zufrieden sein mit dat - быть довольным чем-то
-Es geht um akk - идёт речь о чем-то
+\multicolumn{4}{l}{\term{um}} \\ \hline
+		 & bitten & um \akk & Просить о чём-то \\
+	sich & kümmern & um \akk & Заботиться о ком-то (чем-то) \\
+		 & es geht & um \akk & Идёт речь о чем-то \\
+		 
+\multicolumn{4}{l}{\term{von}} \\ \hline
+		 & träumen & von \dat & Мечтать о чем-то \\
+		 & abhängen & von \dat & Зависеть от кого-то \\
+	sich & verabschieden & von \dat & Попрощаться с кем-то \\
+		 & erzahlen & von \dat & Рассказывать о чем-то (используется чаще) \\
 
-Fragen nach dat - спрашивать о чем-то
+\multicolumn{4}{l}{\term{vor}} \\ \hline
+		 & Angst haben & vor \dat & Иметь страх на что-то \\
+	sich & fürchten & vor \dat & Бояться чего-то \\
 
-Träumen von dat - мечтать о чем-то
-Abhängen von dat - зависеть от кого-то
-Sich verabschieden von dat - попрощаться с кем-то
-Gratulierien dat zu dat - поздравить кого-то с чем-то
-Sich verabreden mit dat - договориться с кем-то
-Sich fürchten vor dat - бояться чего-то
+\multicolumn{4}{l}{\term{in}} \\ \hline
+	sich & verlieben & in \akk & Влюбиться в кого-то \\
+	sich & irren & in \dat & Ошибаться в чем-то \\
 
-einladen zu dat - пригласить куда-то
-Erzahlen von dat - рассказывать о чем-то (используется чаще)
+\multicolumn{4}{l}{\term{zu}} \\ \hline
+		 & gratulierien & \dat zu \dat & Поздравить кого-то с чем-то \\
+		 & einladen & zu \dat & Пригласить куда-то \\
 
-Sich Irren in dat - ошибаться в чем-то
+\multicolumn{4}{l}{\term{nach}} \\ \hline
+		 & fragen & nach \dat & Спрашивать о чем-то \\
 
-vor()schlagen an()bieten dat akk - предлагать кому-то что-то
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Предлоги времени
