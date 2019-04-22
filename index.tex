@@ -1,4 +1,5 @@
-\documentclass[12pt]{report}
+\documentclass[12pt,a4paper]{report}
+%\documentclass[10pt,a5paper]{report}
 
 %\usepackage{fontspec}
 \usepackage{polyglossia}
@@ -14,6 +15,7 @@
 
 \usepackage{graphicx,xcolor}
 \usepackage{longtable}
+\usepackage{makecell}
 % \usepackage[colorlinks=true,linkcolor=blue,urlcolor=black,bookmarksopen=true]{hyperref}
 \usepackage[open,openlevel=1]{bookmark}
 \graphicspath{ {./img/} }
@@ -122,11 +124,17 @@
 
 \input{parts/falle.tex}
 \newpage
+\input{parts/adjektive-grad.tex}
+\newpage
 \input{parts/wenn-weil-als.tex}
 \newpage
 
 % ========================================================================================================
-\chapter{V + zu + V - два глагола в предложении}
+\chapter{Глаголы + zu + um / ohne / damit}
+
+Сущеуствует несколько способов соединения нескольих глаголов в предложении.
+
+\paragraph{V + zu + V - два глагола в предложении без связующей}
 
 Используется для соединения нескольких глаголов в предложении. \ubersatze{Я пытаюсь немецкий изучать}. Zu не ставится для глаголов движения (на первом месте)!
 
@@ -148,14 +156,41 @@
 \end{itemize}
 
 % ========================================================================================================
-\chapter{V + um + zu + V - что-бы}
+\paragraph{V + um / damit + zu + V = что-бы}
 
-Тоже самое что V + zu, но смысл "что бы". Всё тоже самое, только перед придаточным предложением помещается \term{um}.
+Конструкция \term{um+zu} и союз \term{damit} на русский язык переводятся одинаково \ubersatze{для того, чтобы}. Однако, в немецком языке существует серьезная разница при построение предложений с \term{um + zu} zu и \term{damit}. Давайте сравним:
+
+\begin{itemize}
+\item Ich rufe meinen Freund, \satzew{um} ihn an den Termin \satzew{zu} erinnern.
+~\\ \ubersatze{Я звоню своему другу, чтобы напомнить ему о встрече.}
+\item Ich rufe meinen Freund, \satzew{damit} er mir über seinen Urlaub erzählt.
+~\\ \ubersatze{Я звоню моему другу, чтобы он рассказал мне о своем отпуске. (глагол вконец и спрягается)}
+\end{itemize}
+
+В первом случае и в главном, и в придаточном предложение субьект один - ich. Во втором случае, в предложение два субъекта - ich (в главном предложение) и er (в придаточном). По этой причине употребляется союз \term{damit}, а не конструкция \term{um+zu}. 
 
 \paragraph{Примеры:}
 \begin{itemize}
-\item Ich gehe zu shule \term{um} neue kentnise zubekommen.
+\item Ich gehe zu shule \satzew{um} neue kentnise zubekommen.
 ~\\ \ubersatze{Я иду в школу что бы получить новые знания.}
+\end{itemize}
+
+% ========================================================================================================
+\paragraph{V + ohne + zu + V = без (помощи) чего-то}
+
+\paragraph{Примеры:}
+\begin{itemize}
+\item Ich uberzetse die Worte, \satzew{ohne} wortebuch zubenutsen.
+~\\ \ubersatze{Я перевожу слова, не используя переводчик.}
+\end{itemize}
+
+% ========================================================================================================
+\paragraph{V + statt / anstatt + zu + V = вместо чего-то}
+
+\paragraph{Примеры:}
+\begin{itemize}
+\item Ich uberzetse die Worte, \satzew{statt} wortebuch zubenutsen.
+~\\ \ubersatze{Я перевожу слова, вместо использования переводчика.}
 \end{itemize}
 
 % ========================================================================================================
