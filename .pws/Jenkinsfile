@@ -10,9 +10,9 @@ pipeline {
             steps {
                 sh 'git clean -xffd'
                 // Run 3 times to recalc output PDF page layout
-                sh 'xelatex index.tex'
-                sh 'xelatex index.tex'
-                sh 'xelatex index.tex'
+                sh 'xelatex de-konspekt.tex'
+                sh 'xelatex de-konspekt.tex'
+                sh 'xelatex de-konspekt.tex'
                 archiveArtifacts artifacts: '*.pdf'
             }
         }
