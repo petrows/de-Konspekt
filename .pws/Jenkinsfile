@@ -1,6 +1,7 @@
 pipeline {
     agent {
         dockerfile {
+            label 'linux && docker'
             filename '.pws/Dockerfile'
         }
     }
@@ -8,6 +9,9 @@ pipeline {
         stage('build') {
             steps {
                 sh 'git clean -xffd'
+                // Run 3 times to recalc output PDF page layout
+                sh 'xelatex index.tex'
+                sh 'xelatex index.tex'
                 sh 'xelatex index.tex'
                 archiveArtifacts artifacts: '*.pdf'
             }
