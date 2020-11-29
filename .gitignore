@@ -6,3 +6,5 @@
 .vscode
 .tex*
 .cache
+
+__latexindent_*
