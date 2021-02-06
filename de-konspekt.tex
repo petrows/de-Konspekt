@@ -3,11 +3,13 @@
 
 \usepackage{polyglossia}
 \setdefaultlanguage[spelling=new]{german}
-\usepackage[german]{translator}
+\usepackage[german,russian]{translator}
 \usepackage{pgfgantt}
 
 \setmainfont[Ligatures=TeX]{Liberation Serif}
-\newfontfamily\cyrillicfonttt{Liberation Serif}
+\newfontfamily\cyrillicfont{Liberation Serif}
+\setmonofont{Liberation Mono}
+\newfontfamily\cyrillicfonttt{Liberation Mono}
 
 \usepackage{geometry} % Меняем поля страницы
 \geometry{left=2cm}% левое поле
@@ -34,6 +36,8 @@
 \newcommand{\akk}{ {\color{red}{\textbf{A}}} }
 \newcommand{\dat}{ {\color{blue}{\textbf{D}}} }
 \newcommand{\gen}{ {\color{userdarkgreen}{\textbf{G}}} }
+% das Verb:
+\newcommand{\dverb}{ {\color{blue}{\textbf{V}}} }
 
 
 \begin{document}

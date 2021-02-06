@@ -2,6 +2,8 @@
 *.log
 *.toc
 *.aux
+*.fdb_latexmk
+*.fls
 .kile
 .vscode
 .tex*
